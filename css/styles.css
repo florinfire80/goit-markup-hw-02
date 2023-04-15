@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+:root {
+  --link-active-color: #2196f3;
+  --text-font-family: "Roboto", sans-serif;
+  --logo-font-family: "Raleway", sans-serif;
+}
+body {
+  font-family: var(--text-font-family);
+}
+h1,
+h2,
+h5 {
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+h5 {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*Global header*/
+
+.logo-header {
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.global-header,
+a {
+  background: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.global-header a.email-phone {
+  color: #757575;
+}
+.global-header a.active {
+  color: var(--link-active-color);
+}
+
+/*Hero-section*/
+
+.hero-section {
+  background: #2f303a;
+}
+.button {
+  background-color: #2196f3;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+/*Main text section*/
+
+.main-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*Our team*/
+.team-section {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-section .employee {
+  font-weight: 400;
+  color: #757575;
+}
+
+/*Footer section*/
+
+.logo-footer {
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.global-footer,
+em {
+  background: #2f303a;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.global-footer a {
+  background: #2f303a;
+}
+
+.email-phone-footer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
