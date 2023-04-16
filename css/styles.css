@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 :root {
-  --link-active-color: #2196f3;
   --text-font-family: "Roboto", sans-serif;
   --logo-font-family: "Raleway", sans-serif;
+  --link-active-color: #2196f3;
+  --header-background-color: #ffffff;
+  --text-color: #212121;
+  --logo-header-color: #000000;
+  --hero-background-color: #2f303a;
+  --button-background-color: #2196f3;
+  --footer-text-color: #ffffff;
+  --portfolio-nd-text-color: #757575;
 }
 body {
   font-family: var(--text-font-family);
@@ -10,15 +17,15 @@ body {
 h1,
 h2,
 h5 {
-  font-style: normal;
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
+
 h1 {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -26,12 +33,12 @@ h1 {
 }
 h2 {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
 }
 h5 {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
@@ -45,21 +52,21 @@ ul {
   font-family: var(--logo-font-family);
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--logo-header-color);
   text-decoration: none;
 }
 
 .global-header,
 a {
-  background: #ffffff;
-  font-style: normal;
+  background: var(--header-background-color);
+
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -69,42 +76,45 @@ a {
 .global-header a.active {
   color: var(--link-active-color);
 }
+.global-header ul a:hover,
+.global-header ul a:focus {
+  color: var(--link-active-color);
+}
 
 /*Hero-section*/
 
 .hero-section {
-  background: #2f303a;
+  background: var(--hero-background-color);
 }
-.button {
-  background-color: #2196f3;
+.button-index {
+  background-color: var(--button-background-color);
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  cursor: pointer;
 }
 
 /*Main text section*/
 
 .main-text {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
 /*Our team*/
 .team-section {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color);
 }
 
 .team-section .employee {
@@ -118,31 +128,61 @@ a {
   font-family: var(--logo-font-family);
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--footer-text-color);
   text-decoration: none;
 }
 
 .global-footer,
 em {
   background: #2f303a;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--footer-text-color);
 }
 .global-footer a {
   background: #2f303a;
 }
 
+.global-footer address a:hover,
+.global-footer address a:focus {
+  color: var(--link-active-color);
+}
 .email-phone-footer {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/*Portfolio page*/
+
+.button-portfolio {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.portfolio-pic {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color);
+}
+.portfolio-pic-second-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--portfolio-nd-text-color);
 }
