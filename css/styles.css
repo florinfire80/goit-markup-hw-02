@@ -61,7 +61,6 @@ ul {
 .global-header,
 a {
   background: var(--header-background-color);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -76,8 +75,9 @@ a {
 .global-header a.active {
   color: var(--link-active-color);
 }
-.global-header ul a:hover,
-.global-header ul a:focus {
+
+.global-header a:hover,
+.global-header a:focus {
   color: var(--link-active-color);
 }
 
@@ -134,10 +134,8 @@ a {
   text-decoration: none;
 }
 
-.global-footer,
-em {
+.global-footer {
   background: #2f303a;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -153,6 +151,7 @@ em {
   color: var(--link-active-color);
 }
 .email-phone-footer {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -172,6 +171,10 @@ em {
   color: var(--text-color);
   cursor: pointer;
 }
+.active-btn {
+  color: var(--link-active-color);
+}
+
 .portfolio-pic {
   font-weight: 700;
   font-size: 18px;
