@@ -76,8 +76,12 @@ a {
   color: var(--link-active-color);
 }
 
-.global-header a:hover,
-.global-header a:focus {
+.global-header ul a:hover,
+.global-header ul a:focus {
+  color: var(--link-active-color);
+}
+.global-header a.email-phone:hover,
+.global-header a.email-phone:focus {
   color: var(--link-active-color);
 }
 
